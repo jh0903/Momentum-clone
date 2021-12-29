@@ -1,0 +1,124 @@
+html, body{
+    margin:0;
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: "SF Pro";
+}
+
+#clock{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 13px rgba(253, 253, 253, 0.747);
+    margin: 60px 0px;
+    
+}
+
+#greeting{
+    color:rgba(255, 255, 255, 0.89);
+    font-family: Caveat;
+    letter-spacing: 1px;
+    animation: fadein 3s;
+    margin: -50px 0px 60px 0px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#input2{
+    width: 230px;
+    height: 28px;
+    font-family: "SF Pro";
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgba(224, 224, 224, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    box-shadow: 0px 0px 1px azure;
+}
+
+#todo-list{
+    list-style: none;
+    padding: 0px 0px 0px 20px;
+}
+
+li{
+    margin: 12px;
+}
+
+li>span{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+li>button{
+    background-color: rgba(224, 224, 224, 0);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.719);
+    padding: 1px 5px;
+    margin: 0px 15px;
+    border:1px solid rgba(255, 255, 255, 0.842);
+    color:rgba(255, 255, 255, 0.822);
+    border-radius: 3px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 100;
+}
+
+#input1{
+    width: 205px;
+    height: 25px;
+    color: white;
+    font-size:18px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.582);
+    border-radius: 3px;
+}
+
+#btn{
+    height:30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(214, 135, 135, 0);
+    border: 2px solid rgba(255, 255, 255, 0.582);
+    border-radius: 3px;
+    margin: 0px 0px 0px -30px;
+}
+
+.container{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    top: 250px;
+}
+
+img{
+    position: absolute;
+    top:0;
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+#quote{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.hidden{
+    display: none;
+}
