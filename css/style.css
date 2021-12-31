@@ -6,11 +6,6 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-<<<<<<< HEAD
-    z-index: -2;
-}
-
-=======
     z-index: -1;
 }
 
@@ -21,8 +16,6 @@ img{
     text-align: center;
 }
 
-
->>>>>>> d2d9b344872a78886ae4deb146c8eed956e61fcb
 body{
     font-family: "SF Pro";
     overflow: hidden;
@@ -30,17 +23,12 @@ body{
 
 
 #clock{
-<<<<<<< HEAD
     color:rgba(255, 255, 255, 0.918);
     text-shadow: 0px 0px 13px rgba(253, 253, 253, 0.747);
     position: absolute;
     top:20%;
     left:50%;
     transform: translate(-50%,50%);
-=======
-    margin: 100px 0px 40px 0px;
-    text-shadow: 0px 0px 13px rgba(253, 253, 253, 0.747);
->>>>>>> d2d9b344872a78886ae4deb146c8eed956e61fcb
 }
 
 
@@ -50,13 +38,9 @@ body{
     font-family: Caveat;
     letter-spacing: 1px;
     animation: fadein 3s;
-<<<<<<< HEAD
     top: 41%;
     left:50%;
     transform: translate(-50%,50%);
-=======
-    margin: -50px 0px 50px 0px;
->>>>>>> d2d9b344872a78886ae4deb146c8eed956e61fcb
 }
 
 @keyframes fadein {
@@ -97,11 +81,7 @@ body{
 }
 
 li>span{
-<<<<<<< HEAD
     font-size: 17px;
-=======
-    font-size: 15px;
->>>>>>> d2d9b344872a78886ae4deb146c8eed956e61fcb
     color: rgba(255, 255, 255, 0.918);
 }
 li>button{
@@ -136,12 +116,9 @@ input::placeholder{
     border-right: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.582);
     border-radius: 3px;
-<<<<<<< HEAD
 }
+
 #btn{
-=======
-}#btn{
->>>>>>> d2d9b344872a78886ae4deb146c8eed956e61fcb
     height:30px;
     font-size: 20px;
     font-weight: 500;
