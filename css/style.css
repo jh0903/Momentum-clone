@@ -1,24 +1,39 @@
-html, body{
-    margin:0;
-    height:100%;
-    width: 100%;
-    overflow: hidden;
-    font-family: "SF Pro";
+img{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
 }
+
+body{
+    font-family: "SF Pro";
+    overflow: hidden;
+}
+
 
 #clock{
-    color: rgb(255, 255, 255);
+    color:rgba(255, 255, 255, 0.918);
     text-shadow: 0px 0px 13px rgba(253, 253, 253, 0.747);
-    margin: 60px 0px;
-    
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,50%);
 }
 
+
 #greeting{
+    position:absolute;
     color:rgba(255, 255, 255, 0.89);
     font-family: Caveat;
     letter-spacing: 1px;
     animation: fadein 3s;
-    margin: -50px 0px 60px 0px;
+    top: 41%;
+    left:50%;
+    transform: translate(-50%,50%);
 }
 
 @keyframes fadein {
@@ -29,8 +44,11 @@ html, body{
         opacity: 1;
     }
 }
-
 #input2{
+    position:absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%,50%);
     width: 230px;
     height: 28px;
     font-family: "SF Pro";
@@ -46,12 +64,16 @@ html, body{
     padding: 0px 0px 0px 20px;
 }
 
-li{
-    margin: 12px;
+#todo-container{
+    position:absolute;
+    top: 58%;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 20px 0px 0px 0px;
 }
 
 li>span{
-    font-size: 20px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.918);
 }
 
@@ -70,8 +92,15 @@ input::placeholder{
     font-weight: 100;
 }
 
+#login-form{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+}
+
 #input1{
-    width: 205px;
+    width: 210px;
     height: 25px;
     color: white;
     font-size:18px;
@@ -82,7 +111,6 @@ input::placeholder{
     border-bottom: 2px solid rgba(255, 255, 255, 0.582);
     border-radius: 3px;
 }
-
 #btn{
     height:30px;
     font-size: 20px;
@@ -93,30 +121,14 @@ input::placeholder{
     border-radius: 3px;
     margin: 0px 0px 0px -30px;
 }
-
-.container{
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-align:center;
-    top: 250px;
-}
-
-img{
-    position: absolute;
-    top:0;
-    display:flex;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-}
-
 #quote{
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom:0;
     color: rgba(255, 255, 255, 0.842);
     font-size: 16px;
     letter-spacing: 0.5px;
+    width:100%;
+    text-align: center;
 }
 
 .hidden{

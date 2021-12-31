@@ -12,25 +12,25 @@
         🧭<span style="font-weight: 500;"></span>
         <span></span>
     </div>
-    <div class="container">
     <h2 id="clock" style="font-size: 100px;">00:00:00</h2>
     <form id="login-form" class="hidden" style="margin: 10px;">
         <input id="input1" required
         maxlength="15"
-        type="text" placeholder="What is your name?" />
-        <button id="btn">↵</button>
+        type="text" placeholder="What is your name?" /><button id="btn">↵</button>
     </form>
     <h1 id="greeting" class="hidden" style="font-size: 40px;"></h1>
     <form id="todo-form" class="hidden">
         <input id="input2" type="text" placeholder="Write a To Do!" required/>
     </form>
+    <div id="todo-container">
     <ul id="todo-list" class="hidden">
     </ul>
+</div>
     <div id="quote">
         <span></span>
         <span></span>
-    </div>
-    </div> 
+    </div>  
+    
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
